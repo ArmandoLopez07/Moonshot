@@ -1,0 +1,266 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* --------------------------------Termina normalize-------------------------------------------- */
+/* --------------------------------------------------------------------------------------------- */
+
+.cuerpo {
+  background-image: url("../imagenes/fondo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 250% 100%;
+  background-color: rgb(15, 12, 43);
+}
+/* -------------------------------Pagina principal-------------------------------------------- */
+.grid {
+  display: grid;
+  grid-template-areas: "header" "contenido" "Footer";
+}
+.header {
+  background-color: rgba(50, 50, 50, 0.3);
+  backdrop-filter: blur(3px);
+  color: rgb(250, 250, 250);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5%;
+}
+.princ {
+  width: 60px;
+  height: auto;
+  border: solid 2px rgb(180, 180, 180);
+  box-shadow: 0 0 5px 1px white;
+  border-radius: 50%;
+}
+hr {
+  display: none;
+}
+.botones {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+.botones a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10% 5px 10%;
+  font-size: 18px;
+}
+.central {
+  border-left: solid 2px white;
+  border-right: solid 2px white;
+}
+.texto {
+  width: 100%;
+  padding: 10%;
+}
+.contexto {
+  background-color: rgba(50, 50, 50, 0.4);
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+}
+.contexto p {
+  text-align: justify;
+}
+.texto img {
+  width: 50%;
+  border-radius: 50%;
+  border: solid;
+  /* box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.623); */
+}
+.texto p {
+  padding: 10% 5% 0 5%;
+  font-size: 18px;
+}
+.descripcion {
+  color: white;
+  text-justify: distribute;
+}
+.botcont {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.botcont a {
+  width: 100%;
+}
+.boton {
+  width: 80%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(87, 87, 87);
+  background-image: url("../imagenes/zak.jpg");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+  margin: 5% auto 5% auto;
+  box-shadow: 0 0 7px 1px rgba(255, 255, 255, 0.8);
+  border: solid 15px rgba(10, 10, 10, 0.664);
+}
+.btn-1 {
+  background-image: url("../imagenes/moon.jpg");
+}
+.btn-2 {
+  background-image: url("../imagenes/zak.jpg");
+}
+.link {
+  text-decoration: none;
+}
+.boton h2 {
+  color: white;
+}
+.footer {
+  background-color: rgba(14, 14, 14, 0.7);
+  display: flex;
+  justify-content: space-around;
+  padding: 10%;
+}
+.redes i {
+  font-size: 25px;
+  color: white;
+  padding-right: 10px;
+}
+.ubicacion {
+  color: white;
+  font-size: 20px;
+}
+/* -------------------------------Pagina Galeria-------------------------------------------------- */
+/* -------------------------------Pagina TOS-------------------------------------------------- */
+/* -------------------------------Pagina Precios-------------------------------------------------- */
+/* -------------------------------Responsive-------------------------------------------------- */
