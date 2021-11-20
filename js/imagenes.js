@@ -1,18 +1,16 @@
-var dir = "../imagenes/galery/";
-var fileextension = ".jpg";
+var folder = "../imagenes/galery/";
 
 $.ajax({
-  //This will retrieve the contents of the folder if the folder is configured as 'browsable'
-  url: dir,
+  url: folder,
   success: function (data) {
-    //List all .png file names in the page
     $(data)
-      .find("a:contains(" + fileextension + ")")
-      .each(function () {
-        var filename = this.href;
-        $(".galeria").append(
-          "<div class='grilla'><img src='" + filename + "'></div>"
-        );
+      .find("a")
+      .attr("href", function (i, val) {
+        if (val.match(/\.(jpe?g|png|gif)$/)) {
+          $(".galeria").append(
+            "<div class='grilla'><img src='" + folder + val + "'></div>"
+          );
+        }
       });
   },
 });

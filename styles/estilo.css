@@ -130,7 +130,8 @@ table {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 250% 100%;
-  background-color: rgb(15, 12, 43);
+  background-color: rgb(89, 0, 131);
+  background-blend-mode: multiply;
 }
 /* -------------------------------Pagina principal-------------------------------------------- */
 .grid {
@@ -237,7 +238,7 @@ hr {
   background-image: url("../imagenes/moon.jpg");
 }
 .btn-2 {
-  background-image: url("../imagenes/zak.jpg");
+  background-image: url("../imagenes/zak.jpeg");
 }
 .link {
   text-decoration: none;
@@ -254,13 +255,233 @@ hr {
 .redes i {
   font-size: 25px;
   color: white;
-  padding-right: 10px;
+}
+.bi-twitter {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .ubicacion {
   color: white;
   font-size: 20px;
 }
 /* -------------------------------Pagina Galeria-------------------------------------------------- */
+/* .galeria{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+} */
+.contenido h3 {
+  padding: 5%;
+  color: white;
+}
+.galeria {
+  line-height: 0;
+  column-count: 2;
+  gap: 10px;
+  padding: 0 5% 0 5%;
+}
+.galeria img {
+  width: 100% !important;
+  height: auto !important;
+  padding: 10px 0 0 0;
+}
+
 /* -------------------------------Pagina TOS-------------------------------------------------- */
 /* -------------------------------Pagina Precios-------------------------------------------------- */
+/* -------------------------------Pagina Contacto--------------------------------------- */
+.contacto {
+  background-color: rgba(50, 50, 50, 0.3);
+  backdrop-filter: blur(3px);
+  padding: 10%;
+  margin: 10%;
+}
+.elem-group {
+  width: 100%;
+}
+.elem-group label {
+  color: white;
+  font-weight: 600;
+}
+.elem-group input {
+  width: 100%;
+  background-color: rgba(12, 0, 32, 0.507);
+  border: 0;
+  border-radius: 10px;
+  height: 30px;
+  color: white;
+}
+.elem-group textarea {
+  width: 100%;
+  background-color: rgba(12, 0, 32, 0.507);
+  border: 0;
+  border-radius: 10px;
+  height: 100px;
+  resize: none;
+}
+.contacto form {
+  width: 100;
+}
+.sube {
+  width: 100%;
+  margin-top: 5%;
+  border: solid 2px rgba(255, 255, 255, 0.527);
+  background: none;
+  color: white;
+  height: 45px;
+}
 /* -------------------------------Responsive-------------------------------------------------- */
+/* ------------------------------Media query tablet------------------------------------------ */
+@media screen and (min-width: 650px) {
+  .botones {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  .botones a {
+    padding: 10px 10% 10px 10%;
+    font-size: 20px;
+  }
+  hr {
+    display: block;
+    align-self: center;
+    width: 80%;
+    border: solid 2px white;
+  }
+  .contexto p {
+    font-size: 30px;
+  }
+  .botcont a {
+    width: 100%;
+  }
+  .boton {
+    width: 80%;
+    height: 200px;
+  }
+  .boton h2 {
+    font-size: 40px;
+  }
+  .footer {
+    padding: 7%;
+  }
+  .redes i {
+    font-size: 35px;
+  }
+  .bi-twitter {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .ubicacion {
+    font-size: 35px;
+  }
+}
+/* ------------------------------Media query desktop------------------------------------------ */
+@media screen and (min-width: 1000px) {
+  .cuerpo {
+    background-size: 100% 100%;
+  }
+  .header {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    padding: 0;
+  }
+  hr {
+    display: none;
+  }
+  .botones {
+    display: flex;
+    width: 30%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+  }
+  .carrusel {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .texto {
+    width: 100%;
+    padding: 5% 20% 5% 20%;
+  }
+  .contexto {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+  }
+  .texto img {
+    width: 30%;
+  }
+  .texto p {
+    padding: 0% 7% 0 10%;
+    font-size: 30px;
+    text-align: justify;
+  }
+  .botcont {
+    flex-direction: row;
+  }
+  .botcont a {
+    width: 50%;
+  }
+  .boton {
+    width: 80%;
+    height: 250px;
+    margin: 0 auto 5% auto;
+  }
+  .footer {
+    padding: 2%;
+  }
+  .bi-twitter {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .ubicacion {
+    color: white;
+    font-size: 25px;
+  }
+  /* -------------------responsive galeria------------------------------ */
+  .contenido h3 {
+    padding: 2% 0% 2% 10%;
+
+    color: white;
+    font-size: 40px;
+  }
+  .galeria {
+    line-height: 0;
+    column-count: 4;
+    gap: 10px;
+    padding: 0 5% 0 5%;
+  }
+  .galeria img {
+    width: 100% !important;
+    height: auto !important;
+    padding: 10px 0 0 0;
+  }
+  /* -------------------------responsive Contacto --------------------------- */
+  .contacto {
+    padding: 3% 7% 3% 7%;
+    margin: 3% 30% 3% 30%;
+  }
+  .contacto h3 {
+    padding-left: 0;
+  }
+  .elem-group {
+    padding-top: 15px;
+  }
+  .elem-group input {
+    height: 50px;
+  }
+  .elem-group textarea {
+    height: 120px;
+  }
+  .sube:hover {
+    background-color: white;
+    color: black;
+  }
+}
