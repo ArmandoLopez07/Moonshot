@@ -444,10 +444,10 @@ hr {
     padding: 0 5% 3% 5%;
   }
   .botcont a {
-    width: 30%;
+    width: 30% !important;
   }
   .boton {
-    width: 90%;
+    width: 90% !important;
     height: 250px;
     margin: 0 auto 5% auto;
   }
