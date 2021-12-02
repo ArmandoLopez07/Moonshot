@@ -8,7 +8,7 @@ $.ajax({
       .attr("href", function (i, val) {
         if (val.match(/\.(jpe?g|png|gif)$/)) {
           $(".galeria").append(
-            "<div class='grilla'><img src='" + folder + val + "'></div>"
+            "<div class='grilla'><img src='" + val + "'></div>"
           );
         }
       });

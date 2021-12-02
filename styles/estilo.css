@@ -240,6 +240,9 @@ hr {
 .btn-2 {
   background-image: url("../imagenes/zak.jpeg");
 }
+.btn-3 {
+  background-image: url("../imagenes/zak.jpg");
+}
 .link {
   text-decoration: none;
 }
@@ -289,6 +292,16 @@ hr {
 }
 
 /* -------------------------------Pagina TOS-------------------------------------------------- */
+.terminos-contenedor {
+  background-color: rgba(50, 50, 50, 0.3);
+  backdrop-filter: blur(3px);
+  margin: 10%;
+}
+.terminos {
+  color: rgb(228, 228, 228);
+  padding: 10%;
+  text-align: justify;
+}
 /* -------------------------------Pagina Precios-------------------------------------------------- */
 /* -------------------------------Pagina Contacto--------------------------------------- */
 .contacto {
@@ -311,14 +324,17 @@ hr {
   border-radius: 10px;
   height: 30px;
   color: white;
+  padding: 5%;
 }
 .elem-group textarea {
   width: 100%;
   background-color: rgba(12, 0, 32, 0.507);
   border: 0;
+  padding: 3%;
   border-radius: 10px;
   height: 100px;
   resize: none;
+  color: white;
 }
 .contacto form {
   width: 100;
@@ -425,12 +441,13 @@ hr {
   }
   .botcont {
     flex-direction: row;
+    padding: 0 5% 3% 5%;
   }
   .botcont a {
-    width: 50%;
+    width: 30%;
   }
   .boton {
-    width: 80%;
+    width: 90%;
     height: 250px;
     margin: 0 auto 5% auto;
   }
@@ -483,5 +500,16 @@ hr {
   .sube:hover {
     background-color: white;
     color: black;
+  }
+  /* --------------------------Responsive TOS---------------------------------- */
+  .terminos-contenedor {
+    background-color: rgba(50, 50, 50, 0.3);
+    backdrop-filter: blur(3px);
+    margin: 5% 15%;
+  }
+  .terminos {
+    color: rgb(228, 228, 228);
+    padding: 5% 10%;
+    text-align: justify;
   }
 }
